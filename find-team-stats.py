@@ -6,7 +6,8 @@ from sys import exit
 
 
 def ReadFile():
-	path = os.path.dirname(os.path.abspath(__file__))+"\\"
+	path = os.path.dirname(os.path.abspath(__file__))
+	path = os.path.join(path, "")
 	rows = []
 	
 	with open(path + "IIHF_WC-stats.csv", encoding="utf8") as file:
